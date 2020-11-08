@@ -15,7 +15,7 @@ class LoginController extends Controller
 
     public function username()
     {
-        return 'name';
+        return 'key';
     }
 
     protected function validateLogin(Request $request)
