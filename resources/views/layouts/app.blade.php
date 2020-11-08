@@ -20,11 +20,12 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-    <div id="app">
+    <div class="vh-100" id="app">
         @auth
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                     <!-- Right Side Of Navbar -->
+                    De After.
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
                         
@@ -51,7 +52,7 @@
         </nav>
         @endauth
 
-        <main class="py-4">
+        <main class="h-100">
             @yield('content')
         </main>
     </div>
