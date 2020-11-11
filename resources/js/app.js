@@ -5,6 +5,7 @@
  */
 
 require('./bootstrap');
+require('./countdown.js');
 
 window.Vue = require('vue');
 

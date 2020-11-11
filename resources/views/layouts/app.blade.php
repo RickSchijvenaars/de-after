@@ -24,30 +24,33 @@
         @auth
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-                    <!-- Right Side Of Navbar -->
-                    De After.
-                    <ul class="navbar-nav ml-auto">
-                        <!-- Authentication Links -->
-                        
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->booker_name }}
-                                </a>
+                <!-- Right Side Of Navbar -->
+                De After.
+                <ul class="navbar-nav ml-auto">
+                    <!-- Authentication Links -->
+                
+                    <li class="nav-item dropdown">
+                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                            @if(Auth::user()->booker_name)
+                                {{ Auth::user()->booker_name }}
+                            @else
+                                Account
+                            @endif
+                        </a>
 
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="{{ route('logout') }}"
+                                onclick="event.preventDefault();
+                                                document.getElementById('logout-form').submit();">
+                                {{ __('Logout') }}
+                            </a>
 
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
-                                </div>
-                            </li>
-                        </ul>
-                </div>
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                @csrf
+                            </form>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </nav>
         @endauth
@@ -56,5 +59,8 @@
             @yield('content')
         </main>
     </div>
+    <!-- @if (\Request::is('/'))
+        <script src="{{ asset('js/countdown.js') }}"></script>
+    @endif -->
 </body>
 </html>

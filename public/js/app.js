@@ -49730,6 +49730,8 @@ module.exports = function(module) {
  */
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
+__webpack_require__(/*! ./countdown.js */ "./resources/js/countdown.js");
+
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 /**
  * The following block of code may be used to automatically register your
@@ -49865,6 +49867,44 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ExampleComponent_vue_vue_type_template_id_299e239e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
+
+/***/ }),
+
+/***/ "./resources/js/countdown.js":
+/*!***********************************!*\
+  !*** ./resources/js/countdown.js ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js")["default"];
+
+;
+axios.get('/api/times').then(function (response) {
+  var countDown1 = new Date(response.data[0].time1).getTime();
+  console.log(countDown1);
+  var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime(); // Update the count down every 1 second
+
+  var x = setInterval(function () {
+    // Get today's date and time
+    var now = new Date().getTime(); // Find the distance between now and the count down date
+
+    var distance = countDown1 - now; // Time calculations for days, hours, minutes and seconds
+
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor(distance % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
+    var minutes = Math.floor(distance % (1000 * 60 * 60) / (1000 * 60));
+    var seconds = Math.floor(distance % (1000 * 60) / 1000); // Display the result in the element with id="demo"
+
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s "; // If the count down is finished, write some text
+
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("demo").remove();
+      document.querySelector(".teamslink").classList.toggle("d-none");
+    }
+  }, 1000);
+});
 
 /***/ }),
 
