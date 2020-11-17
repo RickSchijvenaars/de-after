@@ -55,9 +55,9 @@
         </nav>
         @endauth
 
-        <main class="h-100">
+        <div class="page">
             @yield('content')
-        </main>
+        </div>
     </div>
     <!-- @if (\Request::is('/'))
         <script src="{{ asset('js/countdown.js') }}"></script>

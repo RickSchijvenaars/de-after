@@ -6,3 +6,11 @@
 @import '~bootstrap/scss/bootstrap';
 // Pages
 @import 'login';
+.page {
+    height: calc(100vh - 60px);
+    overflow: hidden;
+}
+
+.navbar {
+    height: 60px;
+}

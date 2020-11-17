@@ -49880,31 +49880,34 @@ __webpack_require__.r(__webpack_exports__);
 var axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js")["default"];
 
 ;
-axios.get('/api/times').then(function (response) {
-  var countDown1 = new Date(response.data[0].time1).getTime();
-  console.log(countDown1);
-  var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime(); // Update the count down every 1 second
 
-  var x = setInterval(function () {
-    // Get today's date and time
-    var now = new Date().getTime(); // Find the distance between now and the count down date
+if (window.location.pathname == '/') {
+  axios.get('/api/times').then(function (response) {
+    var countDown1 = new Date(response.data[0].time1).getTime();
+    console.log(countDown1);
+    var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime(); // Update the count down every 1 second
 
-    var distance = countDown1 - now; // Time calculations for days, hours, minutes and seconds
+    var x = setInterval(function () {
+      // Get today's date and time
+      var now = new Date().getTime(); // Find the distance between now and the count down date
 
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor(distance % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
-    var minutes = Math.floor(distance % (1000 * 60 * 60) / (1000 * 60));
-    var seconds = Math.floor(distance % (1000 * 60) / 1000); // Display the result in the element with id="demo"
+      var distance = countDown1 - now; // Time calculations for days, hours, minutes and seconds
 
-    document.getElementById("demo").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s "; // If the count down is finished, write some text
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor(distance % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
+      var minutes = Math.floor(distance % (1000 * 60 * 60) / (1000 * 60));
+      var seconds = Math.floor(distance % (1000 * 60) / 1000); // Display the result in the element with id="demo"
 
-    if (distance < 0) {
-      clearInterval(x);
-      document.getElementById("demo").remove();
-      document.querySelector(".teamslink").classList.toggle("d-none");
-    }
-  }, 1000);
-});
+      document.getElementById("demo").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s "; // If the count down is finished, write some text
+
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").remove();
+        document.querySelector(".teamslink").classList.toggle("d-none");
+      }
+    }, 1000);
+  });
+}
 
 /***/ }),
 

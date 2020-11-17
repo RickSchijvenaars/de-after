@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="login-container d-flex flex-column align-items-center justify-content-center h-100">
+<div class="login-container d-flex flex-column align-items-center justify-content-center vh-100">
     <div class="login-title">
         De After.
     </div>

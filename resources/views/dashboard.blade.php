@@ -21,7 +21,7 @@
             <b>Speeddate 1:</b><br>
             <h2><span id="demo"></span></h2>
             <div class="teamslink d-none">
-                <a href="https://www.microsoft.com/nl-nl/microsoft-365/microsoft-teams/free">Join speeddate</a>
+                <a href="{{ route('date', ['id' => 1]) }}" target="_blank">Klik om speeddate te joinen</a>
             </div>
         </div>
         

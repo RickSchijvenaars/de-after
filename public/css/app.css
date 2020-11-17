@@ -10927,3 +10927,12 @@ a.text-dark:focus {
   width: 70%;
 }
 
+.page {
+  height: calc(100vh - 60px);
+  overflow: hidden;
+}
+
+.navbar {
+  height: 60px;
+}
+
