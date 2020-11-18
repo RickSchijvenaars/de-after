@@ -4,13 +4,24 @@
 @import 'variables';
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
-// Pages
-@import 'login';
+@import 'dashboard';
 .page {
-    height: calc(100vh - 60px);
+    height: 100vh;
     overflow: hidden;
+    &-background {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+    }
 }
 
 .navbar {
+    z-index: 99;
+    position: absolute !important;
+    top: 0;
+    right: 0;
     height: 60px;
+    background-color: transparent;
 }

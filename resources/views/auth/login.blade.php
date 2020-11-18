@@ -1,22 +1,21 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="login-container d-flex flex-column align-items-center justify-content-center vh-100">
-    <div class="login-title">
-        De After.
-    </div>
-
+<video autoplay muted loop class="page-background">
+    <source src="media/background.mp4" type="video/mp4">
+</video>
+<div class="w-100 m-auto">
     <div class="d-flex w-100 justify-content-center">
-        <div class="login-form col-md-6">
+        <div class="col-md-8 col-lg-6">
             <div class="card-body py-5">
                 <form method="POST" action="{{ route('login') }}">
                     @csrf
 
                     <div class="form-group row">
-                        <label for="key" class="col-md-4 col-form-label text-md-right">SLEUTEL</label>
+                        <label for="key" class="text-white col-md-4 col-form-label text-md-right">SLEUTEL</label>
 
                         <div class="col-md-6">
-                            <input id="key" class="@error('key') is-invalid @enderror login-form-input" name="key" value="{{ old('key') }}" required autofocus>
+                            <input id="key" class="@error('key') is-invalid @enderror col-12" name="key" value="{{ old('key') }}" required autofocus>
 
                             @error('key')
                                 <span class="invalid-feedback" role="alert">

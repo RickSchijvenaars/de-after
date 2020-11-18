@@ -1,0 +1,14 @@
+.dashboard {
+    &-item {
+        height: 80vh;
+        background: rgba(255, 255, 255, 0.8);
+        border: 4px solid white;
+    }
+    &-livestream {
+        &-iframe {
+            &-container {
+                border: 4px solid white;
+            }
+        }
+    }
+}
