@@ -10903,19 +10903,62 @@ a.text-dark:focus {
   }
 }
 
+@media only screen and (max-width: 992px) {
+  .dashboard-container {
+    padding: 60px 0 0 0;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .dashboard-container {
+    padding: 0 60px !important;
+  }
+}
+
 .dashboard-item {
   height: 80vh;
   background: rgba(255, 255, 255, 0.8);
   border: 4px solid white;
 }
 
+@media only screen and (max-width: 992px) {
+  .dashboard-item {
+    margin-bottom: 60px;
+  }
+}
+
 .dashboard-livestream-iframe-container {
   border: 4px solid white;
 }
 
+.dashboard-timetable-item-15 {
+  height: 25px;
+}
+
+.dashboard-timetable-item-45 {
+  height: 75px;
+}
+
+.dashboard-timetable-item-60 {
+  height: 100px;
+}
+
+.dashboard-timetable-item-90 {
+  height: 150px;
+}
+
+.dashboard-timetable-item-bg-artist {
+  background-color: #FF58CF;
+}
+
+.dashboard-timetable-item-bg-activity {
+  background-color: #0700AD;
+  color: white;
+}
+
 .page {
-  height: 100vh;
   overflow: hidden;
+  min-height: 100vh;
 }
 
 .page-background {
@@ -10933,5 +10976,9 @@ a.text-dark:focus {
   right: 0;
   height: 60px;
   background-color: transparent;
+}
+
+.pink {
+  background-color: #FF58CF !important;
 }
 

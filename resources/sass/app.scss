@@ -6,8 +6,8 @@
 @import '~bootstrap/scss/bootstrap';
 @import 'dashboard';
 .page {
-    height: 100vh;
     overflow: hidden;
+    min-height: 100vh;
     &-background {
         position: fixed;
         right: 0;
@@ -24,4 +24,8 @@
     right: 0;
     height: 60px;
     background-color: transparent;
+}
+
+.pink {
+    background-color: #FF58CF !important;
 }
