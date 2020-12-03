@@ -1,14 +1,16 @@
+require('./pagetitle.js');
+
 let dates = [
-    '19 Nov 2020 22:40:00 GMT+1',
-    '19 Nov 2020 22:46:00 GMT+1',
-    '19 Nov 2020 22:53:00 GMT+1',
-    '19 Nov 2020 23:04:00 GMT+1',
-    '20 Nov 2020 02:45:00 GMT+1',
-    '20 Nov 2020 03:45:00 GMT+1',
-    '20 Nov 2020 04:45:00 GMT+1'
+    '01 Dec 2020 18:08:00 GMT+1',
+    '01 Dec 2020 18:09:00 GMT+1',
+    '01 Dec 2020 13:14:00 GMT+1',
+    '30 Nov 2020 17:03:00 GMT+1',
+    '30 Nov 2020 17:04:00 GMT+1',
+    '30 Nov 2020 16:23:00 GMT+1',
+    '30 Nov 2020 16:40:00 GMT+1'
 ]
 
-if (window.location.pathname == '/') {
+if (window.location.pathname == '/dashboard') {
     dates.forEach(date => {
         let time = new Date(Date.parse(date)).getTime();
         let now = new Date().getTime();
@@ -26,6 +28,13 @@ if (window.location.pathname == '/') {
 }
 
 function displayActivity(index) {
+    const audio = new Audio('/media/alert.mp3');
+    audio.play();
+
+    pageTitleNotification.on("NIEUWE ACTIVITEIT!");
+
+    window.alert("Tijd voor een nieuwe activiteit - Check de timetable!");
+
     $('#exampleModal').modal('show');
     document.querySelector(".activity-" + index + "-announcement").classList.toggle("d-none");
     document.querySelector(".activity-" + index).classList.toggle("d-none");

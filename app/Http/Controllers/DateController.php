@@ -29,6 +29,7 @@ class DateController extends Controller
             $currentTime = Carbon::now()->timezone('Europe/Stockholm')->toDateTimeString();
             $startTime = Time::pluck('time' . $id)->first();
             $endTime = Carbon::create($startTime)->addMinutes(30);
+            
     
             if($startTime <= $currentTime && $endTime > $currentTime) {
                 return view('date', ['id' => $id]);

@@ -4,6 +4,8 @@
 <video autoplay muted loop class="page-background">
     <source src="media/background.mp4" type="video/mp4">
 </video>
+<div class="logo-container">
+</div>
 <div class="w-100 m-auto">
     <div class="d-flex w-100 justify-content-center">
         <div class="col-md-8 col-lg-6">

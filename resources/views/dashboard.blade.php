@@ -4,6 +4,7 @@
 <video autoplay muted loop class="page-background">
     <source src="media/background.mp4" type="video/mp4">
 </video>
+<img src="/media/logo-breed.png" class="position-absolute logo-small"></img>
 <div class="dashboard-container container-fluid">
     <div class="row d-flex">
         <div class="col-lg-6">
@@ -11,16 +12,18 @@
                 <div class="text-center">
                     <h1>The finest tunes</h1> 
                 </div>
-                <div class="d-flex align-items-center h-100">
+                <div class="d-flex flex-column align-items-center h-100">
                     <div class="my-auto dashboard-livestream-iframe-container rounded-lg embed-responsive embed-responsive-16by9">
                         <iframe 
                             class="dashboard-livestream-iframe embed-responsive-item"
-                            src="https://www.youtube.com/embed/36YnV9STBqc"
+                            src="https://www.youtube.com/embed/R1w8zYBbClU?autoplay=1" 
                             frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                             allowfullscreen
                         >
                         </iframe>
                     </div>
+                    <a href="https://www.mixcloud.com/live/DeAfterNL/" target="_blank" class="text-reset text-decoration-none">Klik hier als de stream offline is!</a>
                 </div>
             </div>
         </div>
@@ -83,7 +86,7 @@
                             </div>
                             <div class="dashboard-timetable-item-15 dashboard-timetable-item-bg-activity border d-flex align-items-center justify-content-center">
                                 <span class="activity-1-announcement">Bekend om 23:45</span>     
-                                <span class="activity-1 d-none"><a href="{{ route('date', ['id' => 1]) }}" class="text-white text-decoration-none">Datetime! Klik hier!</a></span>
+                                <span class="activity-1 d-none"><a href="{{ route('date', ['id' => 1]) }}" target="_blank" class="text-white text-decoration-none">Datetime! Klik hier!</a></span>
                             </div>
                             <div class="dashboard-timetable-item-45 border d-flex align-items-center justify-content-center">
                             </div>
@@ -95,7 +98,7 @@
                             </div>
                             <div class="dashboard-timetable-item-15 dashboard-timetable-item-bg-activity border d-flex align-items-center justify-content-center">
                                 <span class="activity-3-announcement">Bekend om 01:45</span>     
-                                <span class="activity-3 d-none"><a href="{{ route('date', ['id' => 2]) }}" class="text-white text-decoration-none">Datetime! Klik hier!</a></span>
+                                <span class="activity-3 d-none"><a href="{{ route('date', ['id' => 2]) }}" target="_blank" class="text-white text-decoration-none">Datetime! Klik hier!</a></span>
                             </div>
                             <div class="dashboard-timetable-item-45 border d-flex align-items-center justify-content-center">
                             </div>
@@ -107,7 +110,7 @@
                             </div>
                             <div class="dashboard-timetable-item-15 dashboard-timetable-item-bg-activity border d-flex align-items-center justify-content-center">
                                 <span class="activity-5-announcement">Bekend om 03:45</span>         
-                                <span class="activity-5 d-none"><a href="{{ route('date', ['id' => 3]) }}" class="text-white text-decoration-none">Datetime! Klik hier!</a></span>
+                                <span class="activity-5 d-none"><a href="{{ route('date', ['id' => 3]) }}" target="_blank" class="text-white text-decoration-none">Datetime! Klik hier!</a></span>
                             </div>
                             <div class="dashboard-timetable-item-45 border d-flex align-items-center justify-content-center">
                             </div>
@@ -145,20 +148,20 @@
         </div>
     </div>
 </div>
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div onclick="pageTitleNotification.off()" class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
         <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">Nieuwe activiteit!</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
+            <button onclick="pageTitleNotification.off()" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
             </button>
         </div>
         <div class="modal-body">
             Tijd voor een nieuwe activiteit - Check de timetable!
         </div>
         <div class="modal-footer">
-            <button type="button" class="btn text-white pink" data-dismiss="modal">OK</button>
+            <button onclick="pageTitleNotification.off()" type="button" class="btn text-white pink" data-dismiss="modal">OK</button>
         </div>
         </div>
     </div>

@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
+@charset "UTF-8";
 
 /*!
  * Bootstrap v4.5.3 (https://getbootstrap.com/)
@@ -10956,6 +10956,15 @@ a.text-dark:focus {
   color: white;
 }
 
+@font-face {
+  font-family: Coolvetica;
+  src: url("/fonts/coolvetica.ttf");
+}
+
+body {
+  font-family: Coolvetica !important;
+}
+
 .page {
   overflow: hidden;
   min-height: 100vh;
@@ -10973,12 +10982,73 @@ a.text-dark:focus {
   z-index: 99;
   position: absolute !important;
   top: 0;
-  right: 0;
+  left: 0;
   height: 60px;
   background-color: transparent;
 }
 
 .pink {
   background-color: #FF58CF !important;
+}
+
+.date-iframe {
+  padding: 0 !important;
+}
+
+.date-back {
+  top: 0;
+  padding: 22px;
+  z-index: 10;
+  border-bottom-right-radius: 30px;
+  cursor: pointer;
+}
+
+.date-countdown {
+  max-height: 30vh;
+}
+
+.date-activity {
+  max-height: 70vh;
+}
+
+.date-activity-description {
+  overflow: auto;
+}
+
+.logo-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url("/media/logo-breed.png");
+  background-repeat: no-repeat;
+  background-size: 200%;
+  background-position: center top;
+}
+
+.logo-small {
+  right: 0;
+  top: -25px;
+  height: 120px;
+  z-index: 100;
+}
+
+@media only screen and (min-width: 768px) {
+  .logo-container {
+    background-position: center -100px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .logo-container {
+    background-position: center -140px;
+    background-size: 150%;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .logo-container {
+    background-size: 120%;
+  }
 }
 

@@ -37270,11 +37270,13 @@ module.exports = function(module) {
   !*** ./resources/js/activities.js ***!
   \************************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-var dates = ['19 Nov 2020 22:40:00 GMT+1', '19 Nov 2020 22:46:00 GMT+1', '19 Nov 2020 22:53:00 GMT+1', '19 Nov 2020 23:04:00 GMT+1', '20 Nov 2020 02:45:00 GMT+1', '20 Nov 2020 03:45:00 GMT+1', '20 Nov 2020 04:45:00 GMT+1'];
+__webpack_require__(/*! ./pagetitle.js */ "./resources/js/pagetitle.js");
 
-if (window.location.pathname == '/') {
+var dates = ['01 Dec 2020 18:08:00 GMT+1', '01 Dec 2020 18:09:00 GMT+1', '01 Dec 2020 13:14:00 GMT+1', '30 Nov 2020 17:03:00 GMT+1', '30 Nov 2020 17:04:00 GMT+1', '30 Nov 2020 16:23:00 GMT+1', '30 Nov 2020 16:40:00 GMT+1'];
+
+if (window.location.pathname == '/dashboard') {
   dates.forEach(function (date) {
     var time = new Date(Date.parse(date)).getTime();
     var now = new Date().getTime();
@@ -37292,6 +37294,10 @@ if (window.location.pathname == '/') {
 }
 
 function displayActivity(index) {
+  var audio = new Audio('/media/alert.mp3');
+  audio.play();
+  pageTitleNotification.on("NIEUWE ACTIVITEIT!");
+  window.alert("Tijd voor een nieuwe activiteit - Check de timetable!");
   $('#exampleModal').modal('show');
   document.querySelector(".activity-" + index + "-announcement").classList.toggle("d-none");
   document.querySelector(".activity-" + index).classList.toggle("d-none");
@@ -37309,6 +37315,8 @@ function displayActivity(index) {
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 __webpack_require__(/*! ./activities.js */ "./resources/js/activities.js");
+
+__webpack_require__(/*! ./countdown.js */ "./resources/js/countdown.js");
 
 $(function () {
   $('[data-toggle="popover"]').popover();
@@ -37358,6 +37366,79 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     forceTLS: true
 // });
+
+/***/ }),
+
+/***/ "./resources/js/countdown.js":
+/*!***********************************!*\
+  !*** ./resources/js/countdown.js ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js")["default"];
+
+;
+
+if (window.location.pathname.split("/")[1] == 'date') {
+  document.querySelector('.navbar').classList.add('d-none');
+  var dateId = window.location.pathname.split("/")[2];
+  axios.get('/api/times').then(function (response) {
+    var startTime = new Date(Object.values(response.data[0])[dateId]).getTime();
+    var endTime = new Date(startTime + 1800000); // Update the count down every 1 second
+
+    var x = setInterval(function () {
+      var now = new Date().getTime();
+      var timeLeft = endTime - now;
+      var minutes = Math.floor(timeLeft % (1000 * 60 * 60) / (1000 * 60));
+      var seconds = Math.floor(timeLeft % (1000 * 60) / 1000);
+      document.getElementById("countdown").innerHTML = minutes + "m " + seconds + "s "; // If the count down is finished, write some text
+
+      if (timeLeft < 0) {
+        clearInterval(x);
+        location.reload();
+      }
+    }, 1000);
+  });
+}
+
+/***/ }),
+
+/***/ "./resources/js/pagetitle.js":
+/*!***********************************!*\
+  !*** ./resources/js/pagetitle.js ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+(function (window, document) {
+  window.pageTitleNotification = function () {
+    var config = {
+      currentTitle: null,
+      interval: null
+    };
+
+    var on = function on(notificationText, intervalSpeed) {
+      if (!config.interval) {
+        config.currentTitle = document.title;
+        config.interval = window.setInterval(function () {
+          document.title = config.currentTitle === document.title ? notificationText : config.currentTitle;
+        }, intervalSpeed ? intervalSpeed : 1000);
+      }
+    };
+
+    var off = function off() {
+      window.clearInterval(config.interval);
+      config.interval = null;
+      document.title = config.currentTitle;
+    };
+
+    return {
+      on: on,
+      off: off
+    };
+  }();
+})(window, document);
 
 /***/ }),
 
