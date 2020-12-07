@@ -16,7 +16,7 @@
                     <div class="my-auto dashboard-livestream-iframe-container rounded-lg embed-responsive embed-responsive-16by9">
                         <iframe 
                             class="dashboard-livestream-iframe embed-responsive-item"
-                            src="https://embed.restream.io/player/index.htmltoken=75fa8?311f8a5180444940a0d7242e1ad?autoplay=1" 
+                            src="https://embed.restream.io/player/index.htmltoken=75fa8?311f8a5180444940a0d7242e1ad" 
                             frameborder="0" 
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                             allowfullscreen
