@@ -16,7 +16,7 @@
                     <div class="my-auto dashboard-livestream-iframe-container rounded-lg embed-responsive embed-responsive-16by9">
                         <iframe 
                             class="dashboard-livestream-iframe embed-responsive-item"
-                            src="https://www.youtube.com/embed/R1w8zYBbClU?autoplay=1" 
+                            src="https://www.youtube.com/embed/MCY2pHjmkbw?autoplay=1" 
                             frameborder="0" 
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                             allowfullscreen
