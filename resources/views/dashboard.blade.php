@@ -80,7 +80,12 @@
                             </div>
                             <div class="dashboard-timetable-item-15 dashboard-timetable-item-bg-activity border d-flex align-items-center justify-content-center">
                                 <span class="activity-0-announcement">Bekend om 22:45</span>    
-                                <span class="activity-0 d-none" role="button" data-toggle="popover" tabindex="0" data-trigger="focus" title="Two Truths And A Lie" data-content="And here's some amazing content. It's very engaging. Right?">Activiteit 1 - Klik hier!</span>
+                                <span class="activity-0 d-none" role="button" data-toggle="popover" tabindex="0" data-trigger="focus" 
+                                    title="Two Truths And A Lie" 
+                                    data-content="Bij deze opdracht vertelt één persoon telkens twee waarheden en een leugen. Aan de rest van de groep is het nu de taak te achterhalen welk verhaal een leugen is en welke de waarheden."
+                                >
+                                    Activiteit 1 - Klik hier!
+                                </span>
                             </div>
                             <div class="dashboard-timetable-item-45 border d-flex align-items-center justify-content-center">
                             </div>
@@ -92,7 +97,15 @@
                             </div>
                             <div class="dashboard-timetable-item-15 dashboard-timetable-item-bg-activity border d-flex align-items-center justify-content-center">
                                 <span class="activity-2-announcement">Bekend om 00:45</span>     
-                                <span class="activity-2 d-none" role="button" data-toggle="popover" tabindex="0" data-trigger="focus" title="Ketalympics" data-content="And here's some amazing content. It's very engaging. Right?">Activiteit 3 - Klik hier!</span>
+                                <span class="activity-2 d-none" role="button" data-toggle="popover" tabindex="0" data-trigger="focus" 
+                                    title="Ketalympics" 
+                                    data-content="Zachtlopen: Wie kan het langzaamst zonder te stoppen 10 meter overbruggen? 
+                                                    Koprol eleganza: Wie kan de elegantste koprol maken? 
+                                                    Vliegtuigjesvouwen: Wiens vliegtuigje overbrugt de grootste afstand? 
+                                                    Kies voor elk onderdeel een jurylid."
+                                >
+                                    Activiteit 3 - Klik hier!
+                                </span>
                             </div>
                             <div class="dashboard-timetable-item-45 border d-flex align-items-center justify-content-center">
                             </div>
@@ -104,7 +117,12 @@
                             </div>
                             <div class="dashboard-timetable-item-15 dashboard-timetable-item-bg-activity border d-flex align-items-center justify-content-center">
                                 <span class="activity-4-announcement">Bekend om 02:45</span>     
-                                <span class="activity-4 d-none" role="button" data-toggle="popover" tabindex="0" data-trigger="focus" title="Verstoppertje" data-content="And here's some amazing content. It's very engaging. Right?">Activiteit 5 - Klik hier!</span>
+                                <span class="activity-4 d-none" role="button" data-toggle="popover" tabindex="0" data-trigger="focus" 
+                                    title="Verstoppertje" 
+                                    data-content="Speel een ronde verstoppertje binnenshuis."
+                                >
+                                    Activiteit 5 - Klik hier!
+                                </span>
                             </div>
                             <div class="dashboard-timetable-item-45 border d-flex align-items-center justify-content-center">
                             </div>
@@ -116,7 +134,12 @@
                             </div>
                             <div class="dashboard-timetable-item-15 dashboard-timetable-item-bg-activity border d-flex align-items-center justify-content-center">
                                 <span class="activity-6-announcement">Bekend om 04:45</span>             
-                                <span class="activity-6 d-none" role="button" data-toggle="popover" tabindex="0" data-trigger="focus" title="Op avontuur!" data-content="And here's some amazing content. It's very engaging. Right?">Activiteit 7 - Klik hier!</span>
+                                <span class="activity-6 d-none" role="button" data-toggle="popover" tabindex="0" data-trigger="focus" 
+                                    title="Op avontuur!" 
+                                    data-content="Ga met je groep op avontuur in en rondom je huis."
+                                >
+                                    Activiteit 7 - Klik hier!
+                                </span>
                             </div>
                         </div>
                         <div class="col-1 p-0">
