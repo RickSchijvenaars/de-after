@@ -31,9 +31,9 @@ class DateController extends Controller
             $endTime = Carbon::create($startTime)->addMinutes(30);
             
     
-            if($startTime <= $currentTime && $endTime > $currentTime) {
+            // if($startTime <= $currentTime && $endTime > $currentTime) {
                 return view('date', ['id' => $id]);
-            }else return redirect()->route('dashboard');
+            // }else return redirect()->route('dashboard');
         } else return redirect()->route('dashboard');
     }
 }

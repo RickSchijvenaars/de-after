@@ -11,10 +11,17 @@
         >
         </iframe>
         <div class="text-white col-3 d-flex flex-column justify-content-between vh-100 pink position-relative">
-            <div class="date-activity p-2 w-100">    
+            <div class="date-activity mt-5 p-2 w-100">    
                 <h1>Complimentenronde</h1>
                 <p class="date-activity-description h-100">
-                    Geef de andere afterende groep een complimentje.
+                    Vul snel je (groeps)naam in en klik op <i>Deelnemen aan de vergadering</i>, want het is tijd om nieuwe mensen te ontmoeten! <br>
+                    <br>
+                    Deze opdracht is heel simpel, wees lief en geef elkaar complimentjes!<br>
+                    <br>
+                    Klets wat met elkaar en geniet van het sociale contact en het eindelijk weer ontmoeten van gelijkgestemden!<br>
+                    <br>
+                    De activiteit duurt eigenlijk 15 minuten, maar als het heel gezellig is, mogen jullie nog wat langer blijven hangen!<br>
+                    Hieronder zie je wanneer de call wordt afgesloten.
                 </p>
             </div>
             <div class="date-countdown w-100 text-center">
@@ -32,10 +39,18 @@
         >
         </iframe>
         <div class="text-white col-3 d-flex flex-column justify-content-between vh-100 pink position-relative">
-            <div class="date-activity p-2 w-100">    
+            <div class="date-activity mt-5 p-2 w-100">    
                 <h1>Among Us</h1>
                 <p class="date-activity-description h-100">
-                    Speel een ronde among us met de andere partij.
+                    Vul snel je (groeps)naam in en klik op <i>Deelnemen aan de vergadering</i>, want het is tijd om nieuwe mensen te ontmoeten! <br>
+                    <br>
+                    Bij deze opdracht is het nodig om de game <i>Among Us</i> te downloaden op je telefoon. Iedereen heeft er van gehoord en waarschijnlijk hebben de meesten het ook al eens gespeeld.<br>
+                    Meet elkaar in-game!<br>
+                    <br>
+                    Lukt het jullie op dit tijdstip nog om de bedrieger te vinden?<br>
+                    <br>
+                    De activiteit duurt eigenlijk 15 minuten, maar als het heel gezellig is, mogen jullie nog wat langer blijven hangen!<br>
+                    Hieronder zie je wanneer de call wordt afgesloten.
                 </p>
             </div>
             <div class="date-countdown w-100 text-center">
@@ -53,10 +68,17 @@
         >
         </iframe>
         <div class="text-white col-3 d-flex flex-column justify-content-between vh-100 pink position-relative">
-            <div class="date-activity p-2 w-100">    
+            <div class="date-activity mt-5 p-2 w-100">    
                 <h1>Tien overeenkomsten</h1>
                 <p class="date-activity-description h-100">
-                    Zoek 10 overeenkomsten met de andere afterende partij.
+                    Vul snel je (groeps)naam in en klik op <i>Deelnemen aan de vergadering</i>, want het is tijd om nieuwe mensen te ontmoeten! <br>
+                    <br>
+                    Bij deze opdracht moet je de andere groep beter leren kennen. Het is namelijk de bedoeling om overeenkomsten te vinden.<br>
+                    <br>
+                    Lukt het jullie om 10 overeenkomsten met de andere groep te vinden?<br>
+                    <br>
+                    De activiteit duurt eigenlijk 15 minuten, maar als het heel gezellig is, mogen jullie nog wat langer blijven hangen!<br>
+                    Hieronder zie je wanneer de call wordt afgesloten.
                 </p>
             </div>
             <div class="date-countdown w-100 text-center">

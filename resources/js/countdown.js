@@ -22,7 +22,7 @@ if (window.location.pathname.split("/")[1] == 'date') {
             // If the count down is finished, write some text
             if (timeLeft < 0) {
                 clearInterval(x);
-                location.reload();
+                // location.reload();
             }
         }, 1000);
     });

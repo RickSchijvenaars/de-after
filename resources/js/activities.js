@@ -1,13 +1,13 @@
 require('./pagetitle.js');
 
 let dates = [
-    '07 Dec 2020 13:15:00 GMT+1',
-    '07 Dec 2020 13:17:00 GMT+1',
-    '07 Dec 2020 13:19:00 GMT+1',
-    '07 Dec 2020 13:21:00 GMT+1',
-    '07 Dec 2020 13:23:00 GMT+1',
-    '07 Dec 2020 13:25:00 GMT+1',
-    '07 Dec 2020 13:27:00 GMT+1'
+    '08 Dec 2020 13:37:00 GMT+1',
+    '08 Dec 2020 13:38:00 GMT+1',
+    '08 Dec 2020 13:39:00 GMT+1',
+    '08 Dec 2020 13:40:00 GMT+1',
+    '08 Dec 2020 13:41:00 GMT+1',
+    '08 Dec 2020 13:42:00 GMT+1',
+    '08 Dec 2020 13:43:00 GMT+1'
 ]
 
 if (window.location.pathname == '/dashboard') {
@@ -38,4 +38,5 @@ function displayActivity(index) {
     $('#exampleModal').modal('show');
     document.querySelector(".activity-" + index + "-announcement").classList.toggle("d-none");
     document.querySelector(".activity-" + index).classList.toggle("d-none");
+    document.querySelector("")
 }

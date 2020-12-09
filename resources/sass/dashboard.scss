@@ -42,7 +42,9 @@
                 }
                 &-activity {
                     background-color: #0700AD;
-                    color: white;
+                    &-time {
+                        background-color: rgba(#0700AD, 0.3);
+                    }
                 }
             }
         }

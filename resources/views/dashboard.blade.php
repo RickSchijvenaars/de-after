@@ -10,7 +10,7 @@
         <div class="col-lg-6">
             <div class="d-flex flex-column dashboard-item p-4 rounded-lg">
                 <div class="text-center">
-                    <h1>The finest tunes</h1> 
+                    <h1>Livestream</h1> 
                 </div>
                 <div class="d-flex flex-column align-items-center h-100">
                     <div class="my-auto dashboard-livestream-iframe-container rounded-lg embed-responsive embed-responsive-16by9">
@@ -59,17 +59,17 @@
                             </div>
                         </div>
                         <div class="p-0 col-5">
-                            <div class="dashboard-timetable-item-60 dashboard-timetable-item-bg-artist border d-flex align-items-center justify-content-center">
+                            <div class="dashboard-timetable-item-90 dashboard-timetable-item-bg-artist border d-flex align-items-center justify-content-center">
                                 Rausch
                             </div>
-                            <div class="dashboard-timetable-item-90 border d-flex align-items-center justify-content-center">
-                                Upperflow
+                            <div class="dashboard-timetable-item-60 border d-flex align-items-center justify-content-center">
+                                Gate44
                             </div>
                             <div class="dashboard-timetable-item-90 dashboard-timetable-item-bg-artist border d-flex align-items-center justify-content-center">
                                 Nimbala
                             </div>
                             <div class="dashboard-timetable-item-90 border d-flex align-items-center justify-content-center">
-                                Gate44
+                                Upperflow
                             </div>
                             <div class="dashboard-timetable-item-90 dashboard-timetable-item-bg-artist border d-flex align-items-center justify-content-center">
                                 Samuel Dictus 
@@ -78,65 +78,92 @@
                         <div class="p-0 col-5">
                             <div class="dashboard-timetable-item-45 border d-flex align-items-center justify-content-center">
                             </div>
-                            <div class="dashboard-timetable-item-15 dashboard-timetable-item-bg-activity border d-flex align-items-center justify-content-center">
-                                <span class="activity-0-announcement">Bekend om 22:45</span>    
-                                <span class="activity-0 d-none" role="button" data-toggle="popover" tabindex="0" data-trigger="focus" 
+                            <div class="dashboard-timetable-item-15 text-white border d-flex align-items-center justify-content-center">
+                                <span class="w-100 text-center dashboard-timetable-item-bg-activity-time activity-0-announcement">Bekend om 22:45</span>    
+                                <span class="w-100 text-center dashboard-timetable-item-bg-activity activity-0 d-none" role="button" data-toggle="popover" tabindex="0" data-trigger="focus" 
                                     title="Two Truths And A Lie" 
-                                    data-content="Bij deze opdracht vertelt één persoon telkens twee waarheden en een leugen. Aan de rest van de groep is het nu de taak te achterhalen welk verhaal een leugen is en welke de waarheden."
+                                    data-html="true"
+                                    data-content="Bij deze opdracht vertelt één persoon uit de groep telkens twee waarheden en een leugen.<br>
+                                                <br>
+                                                Aan de rest van de groep is het nu de taak te achterhalen welk verhaal een leugen is en welke de waarheden.<br>
+                                                <br>
+                                                Overleg hierbij is toegestaan.<br>
+                                                <br>
+                                                Voor degene die verliest (groep of persoon), mag een passende opdracht verzonnen worden."
                                 >
                                     Activiteit 1 - Klik hier!
                                 </span>
                             </div>
                             <div class="dashboard-timetable-item-45 border d-flex align-items-center justify-content-center">
                             </div>
-                            <div class="dashboard-timetable-item-15 dashboard-timetable-item-bg-activity border d-flex align-items-center justify-content-center">
-                                <span class="activity-1-announcement">Bekend om 23:45</span>     
-                                <span class="activity-1 d-none"><a href="{{ route('date', ['id' => 1]) }}" target="_blank" class="text-white text-decoration-none">Datetime! Klik hier!</a></span>
+                            <div class="dashboard-timetable-item-15 text-white border d-flex align-items-center justify-content-center">
+                                <span class="w-100 text-center dashboard-timetable-item-bg-activity-time activity-1-announcement">Bekend om 23:45</span>     
+                                <span class="w-100 text-center dashboard-timetable-item-bg-activity activity-1 d-none"><a href="{{ route('date', ['id' => 1]) }}" target="_blank" class="text-white text-decoration-none">Datetime! Klik hier!</a></span>
                             </div>
                             <div class="dashboard-timetable-item-45 border d-flex align-items-center justify-content-center">
                             </div>
-                            <div class="dashboard-timetable-item-15 dashboard-timetable-item-bg-activity border d-flex align-items-center justify-content-center">
-                                <span class="activity-2-announcement">Bekend om 00:45</span>     
-                                <span class="activity-2 d-none" role="button" data-toggle="popover" tabindex="0" data-trigger="focus" 
-                                    title="Ketalympics" 
-                                    data-content="Zachtlopen: Wie kan het langzaamst zonder te stoppen 10 meter overbruggen? 
-                                                    Koprol eleganza: Wie kan de elegantste koprol maken? 
-                                                    Vliegtuigjesvouwen: Wiens vliegtuigje overbrugt de grootste afstand? 
-                                                    Kies voor elk onderdeel een jurylid."
+                            <div class="dashboard-timetable-item-15 text-white border d-flex align-items-center justify-content-center">
+                                <span class="w-100 text-center dashboard-timetable-item-bg-activity-time activity-2-announcement">Bekend om 00:45</span>     
+                                <span class="w-100 text-center dashboard-timetable-item-bg-activity activity-2 d-none" role="button" data-toggle="popover" tabindex="0" data-trigger="focus" 
+                                    title="Afterlympics" 
+                                    data-html="true"
+                                    data-content="De Afterlympics bestaat uit drie onderdelen. Voor elk onderdeel moet een (zelfde) jurylid aangewezen worden, die de uitvoeringen kan beoordelen.<br>
+                                                    <br>
+                                                    Per onderdeel mag de winnaar een passende opdracht bedenken voor een persoon naar keuze. <br>
+                                                    <br>
+                                                    <b>Zachtlopen:</b><br>
+                                                    Wie kan het langzaamst zonder te stoppen 10 meter overbruggen? <br>
+                                                    <br>
+                                                    <b>Koprol eleganza:</b><br> 
+                                                    Wie kan de elegantste koprol maken? <br>
+                                                    <br>
+                                                    <b>Vliegtuigjes vouwen:</b><br> 
+                                                    Wiens vliegtuigje overbrugt de grootste afstand? <br>
+                                                    <br>
+                                                    Succes!"
                                 >
                                     Activiteit 3 - Klik hier!
                                 </span>
                             </div>
                             <div class="dashboard-timetable-item-45 border d-flex align-items-center justify-content-center">
                             </div>
-                            <div class="dashboard-timetable-item-15 dashboard-timetable-item-bg-activity border d-flex align-items-center justify-content-center">
-                                <span class="activity-3-announcement">Bekend om 01:45</span>     
-                                <span class="activity-3 d-none"><a href="{{ route('date', ['id' => 2]) }}" target="_blank" class="text-white text-decoration-none">Datetime! Klik hier!</a></span>
+                            <div class="dashboard-timetable-item-15 text-white border d-flex align-items-center justify-content-center">
+                                <span class="w-100 text-center dashboard-timetable-item-bg-activity-time activity-3-announcement">Bekend om 01:45</span>     
+                                <span class="w-100 text-center dashboard-timetable-item-bg-activity activity-3 d-none"><a href="{{ route('date', ['id' => 2]) }}" target="_blank" class="text-white text-decoration-none">Datetime! Klik hier!</a></span>
                             </div>
                             <div class="dashboard-timetable-item-45 border d-flex align-items-center justify-content-center">
                             </div>
-                            <div class="dashboard-timetable-item-15 dashboard-timetable-item-bg-activity border d-flex align-items-center justify-content-center">
-                                <span class="activity-4-announcement">Bekend om 02:45</span>     
-                                <span class="activity-4 d-none" role="button" data-toggle="popover" tabindex="0" data-trigger="focus" 
+                            <div class="dashboard-timetable-item-15 text-white border d-flex align-items-center justify-content-center">
+                                <span class="w-100 text-center dashboard-timetable-item-bg-activity-time activity-4-announcement">Bekend om 02:45</span>     
+                                <span class="w-100 text-center dashboard-timetable-item-bg-activity activity-4 d-none" role="button" data-toggle="popover" tabindex="0" data-trigger="focus" 
                                     title="Verstoppertje" 
-                                    data-content="Speel een ronde verstoppertje binnenshuis."
+                                    data-html="true"
+                                    data-content="Jawel! Het spel dat iedereen stiekem best wel leuk vindt, maar waar we eigenlijk te oud voor zijn.<br>
+                                                    We gaan het daarentegen gewoon doen!<br>
+                                                    <br>
+                                                    Dus kies iemand die moet gaan zoeken (bijvoorbeeld met een potje steen, papier, schaar) en verstoppen maar!"
                                 >
                                     Activiteit 5 - Klik hier!
                                 </span>
                             </div>
                             <div class="dashboard-timetable-item-45 border d-flex align-items-center justify-content-center">
                             </div>
-                            <div class="dashboard-timetable-item-15 dashboard-timetable-item-bg-activity border d-flex align-items-center justify-content-center">
-                                <span class="activity-5-announcement">Bekend om 03:45</span>         
-                                <span class="activity-5 d-none"><a href="{{ route('date', ['id' => 3]) }}" target="_blank" class="text-white text-decoration-none">Datetime! Klik hier!</a></span>
+                            <div class="dashboard-timetable-item-15 text-white border d-flex align-items-center justify-content-center">
+                                <span class="w-100 text-center dashboard-timetable-item-bg-activity-time activity-5-announcement">Bekend om 03:45</span>         
+                                <span class="w-100 text-center dashboard-timetable-item-bg-activity activity-5 d-none"><a href="{{ route('date', ['id' => 3]) }}" target="_blank" class="text-white text-decoration-none">Datetime! Klik hier!</a></span>
                             </div>
                             <div class="dashboard-timetable-item-45 border d-flex align-items-center justify-content-center">
                             </div>
-                            <div class="dashboard-timetable-item-15 dashboard-timetable-item-bg-activity border d-flex align-items-center justify-content-center">
-                                <span class="activity-6-announcement">Bekend om 04:45</span>             
-                                <span class="activity-6 d-none" role="button" data-toggle="popover" tabindex="0" data-trigger="focus" 
+                            <div class="dashboard-timetable-item-15 text-white border d-flex align-items-center justify-content-center">
+                                <span class="w-100 text-center dashboard-timetable-item-bg-activity-time activity-6-announcement">Bekend om 04:45</span>             
+                                <span class="w-100 text-center dashboard-timetable-item-bg-activity activity-6 d-none" role="button" data-toggle="popover" tabindex="0" data-trigger="focus" 
                                     title="Op avontuur!" 
-                                    data-content="Ga met je groep op avontuur in en rondom je huis."
+                                    data-html="true"
+                                    data-content="Wie houdt er niet van? Op avontuur om 04:45u op de zaterdagochtend. <br>
+                                                    <br>
+                                                    Wat ligt er eigenlijk allemaal in die woonkamer? <br>
+                                                    <br>
+                                                    Wie kan het gekste voorwerp vinden?"
                                 >
                                     Activiteit 7 - Klik hier!
                                 </span>
