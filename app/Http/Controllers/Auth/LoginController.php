@@ -8,10 +8,22 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Carbon\Carbon;
 
 class LoginController extends Controller
 {
     use AuthenticatesUsers;
+
+    public function showLoginForm()
+    {
+        $currentTime = Carbon::now()->timezone('Europe/Stockholm')->toDateTimeString();
+        $startTime = Carbon::create('2020-12-11 21:45:00');
+
+        if ($currentTime >= $startTime) $open = true;
+        else $open = false;
+
+        return view('auth.login', ['open' => $open]);
+    }
 
     public function username()
     {

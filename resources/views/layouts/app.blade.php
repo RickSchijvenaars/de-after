@@ -86,8 +86,5 @@
             @yield('content')
         </div>
     </div>
-    <!-- @if (\Request::is('/'))
-        <script src="{{ asset('js/countdown.js') }}"></script>
-    @endif -->
 </body>
 </html>

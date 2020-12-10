@@ -1,13 +1,13 @@
 require('./pagetitle.js');
 
 let dates = [
-    '08 Dec 2020 13:37:00 GMT+1',
-    '08 Dec 2020 13:38:00 GMT+1',
-    '08 Dec 2020 13:39:00 GMT+1',
-    '08 Dec 2020 13:40:00 GMT+1',
-    '08 Dec 2020 13:41:00 GMT+1',
-    '08 Dec 2020 13:42:00 GMT+1',
-    '08 Dec 2020 13:43:00 GMT+1'
+    '10 Dec 2020 16:00:00 GMT+1',
+    '10 Dec 2020 16:01:00 GMT+1',
+    '10 Dec 2020 16:02:00 GMT+1',
+    '10 Dec 2020 16:03:00 GMT+1',
+    '10 Dec 2020 16:04:00 GMT+1',
+    '10 Dec 2020 16:05:00 GMT+1',
+    '10 Dec 2020 16:06:00 GMT+1'
 ]
 
 if (window.location.pathname == '/dashboard') {

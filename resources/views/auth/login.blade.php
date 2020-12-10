@@ -10,8 +10,12 @@
     <div class="d-flex w-100 justify-content-center">
         <div class="col-md-8 col-lg-6">
             <div class="card-body py-5">
+                @if ($open)
                 <form method="POST" action="{{ route('login') }}">
                     @csrf
+                @else
+                <form>
+                @endif
 
                     <div class="form-group row">
                         <label for="key" class="text-white col-md-4 col-form-label text-md-right">SLEUTEL</label>
@@ -28,9 +32,15 @@
                     </div>
                     <div class="form-group row mb-0">
                         <div class="col-md-8 offset-md-4">
-                            <button type="submit" class="">
-                                Enter
-                            </button>
+                            @if ($open)
+                                <button type="submit">
+                                    Enter
+                                </button>
+                            @else
+                                <span class="text-white">
+                                    Inloggen is mogelijk vanaf vrijdag 11 december 21:45u.
+                                </span>
+                            @endif
                         </div>
                     </div>
                 </form>
