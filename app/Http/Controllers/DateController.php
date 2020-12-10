@@ -28,12 +28,12 @@ class DateController extends Controller
         if($id > 0 && $id < 4) {
             $currentTime = Carbon::now()->timezone('Europe/Stockholm')->toDateTimeString();
             $startTime = Time::pluck('time' . $id)->first();
-            $endTime = Carbon::create($startTime)->addMinutes(30);
+            $endTime = Carbon::create($startTime)->addMinutes(15);
             
     
-            // if($startTime <= $currentTime && $endTime > $currentTime) {
+            if($startTime <= $currentTime && $endTime > $currentTime) {
                 return view('date', ['id' => $id]);
-            // }else return redirect()->route('dashboard');
+            }else return redirect()->route('dashboard');
         } else return redirect()->route('dashboard');
     }
 }

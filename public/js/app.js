@@ -37386,7 +37386,7 @@ if (window.location.pathname.split("/")[1] == 'date') {
   var dateId = window.location.pathname.split("/")[2];
   axios.get('/api/times').then(function (response) {
     var startTime = new Date(Object.values(response.data[0])[dateId]).getTime();
-    var endTime = new Date(startTime + 1800000); // Update the count down every 1 second
+    var endTime = new Date(startTime + 900000); // Update the count down every 1 second
 
     var x = setInterval(function () {
       var now = new Date().getTime();
@@ -37396,7 +37396,8 @@ if (window.location.pathname.split("/")[1] == 'date') {
       document.getElementById("countdown").innerHTML = minutes + "m " + seconds + "s "; // If the count down is finished, write some text
 
       if (timeLeft < 0) {
-        clearInterval(x); // location.reload();
+        clearInterval(x);
+        location.reload();
       }
     }, 1000);
   });

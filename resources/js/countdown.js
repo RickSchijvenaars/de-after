@@ -7,7 +7,7 @@ if (window.location.pathname.split("/")[1] == 'date') {
 
     axios.get('/api/times').then(response => {
         let startTime = new Date(Object.values(response.data[0])[dateId]).getTime();
-        let endTime = new Date(startTime + 1800000)
+        let endTime = new Date(startTime + 900000)
 
         // Update the count down every 1 second
         let x = setInterval(function() {
@@ -22,7 +22,7 @@ if (window.location.pathname.split("/")[1] == 'date') {
             // If the count down is finished, write some text
             if (timeLeft < 0) {
                 clearInterval(x);
-                // location.reload();
+                location.reload();
             }
         }, 1000);
     });

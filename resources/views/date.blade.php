@@ -14,14 +14,13 @@
             <div class="date-activity mt-5 p-2 w-100">    
                 <h1>Complimentenronde</h1>
                 <p class="date-activity-description h-100">
-                    Vul snel je (groeps)naam in en klik op <i>Deelnemen aan de vergadering</i>, want het is tijd om nieuwe mensen te ontmoeten! <br>
+                    Geef de website snel toestemming tot je camera en microfoon, vul je (groeps)naam in en klik op <i>Deelnemen aan de vergadering</i>, want het is tijd om nieuwe mensen te ontmoeten! <br>
                     <br>
                     Deze opdracht is heel simpel, wees lief en geef elkaar complimentjes!<br>
                     <br>
                     Klets wat met elkaar en geniet van het sociale contact en het eindelijk weer ontmoeten van gelijkgestemden!<br>
                     <br>
-                    De activiteit duurt eigenlijk 15 minuten, maar als het heel gezellig is, mogen jullie nog wat langer blijven hangen!<br>
-                    Hieronder zie je wanneer de call wordt afgesloten.
+                    De activiteit duurt 15 minuten, hieronder zie je wanneer de call wordt afgesloten.
                 </p>
             </div>
             <div class="date-countdown w-100 text-center">
@@ -49,8 +48,7 @@
                     <br>
                     Lukt het jullie op dit tijdstip nog om de bedrieger te vinden?<br>
                     <br>
-                    De activiteit duurt eigenlijk 15 minuten, maar als het heel gezellig is, mogen jullie nog wat langer blijven hangen!<br>
-                    Hieronder zie je wanneer de call wordt afgesloten.
+                    De activiteit duurt 15 minuten, hieronder zie je wanneer de call wordt afgesloten.
                 </p>
             </div>
             <div class="date-countdown w-100 text-center">
@@ -77,8 +75,7 @@
                     <br>
                     Lukt het jullie om 10 overeenkomsten met de andere groep te vinden?<br>
                     <br>
-                    De activiteit duurt eigenlijk 15 minuten, maar als het heel gezellig is, mogen jullie nog wat langer blijven hangen!<br>
-                    Hieronder zie je wanneer de call wordt afgesloten.
+                    De activiteit duurt 15 minuten, hieronder zie je wanneer de call wordt afgesloten.
                 </p>
             </div>
             <div class="date-countdown w-100 text-center">

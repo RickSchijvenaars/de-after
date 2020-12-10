@@ -98,7 +98,7 @@
                             </div>
                             <div class="dashboard-timetable-item-15 text-white border d-flex align-items-center justify-content-center">
                                 <span class="w-100 text-center dashboard-timetable-item-bg-activity-time activity-1-announcement">Bekend om 23:45</span>     
-                                <span class="w-100 text-center dashboard-timetable-item-bg-activity activity-1 d-none"><a href="{{ route('date', ['id' => 1]) }}" target="_blank" class="text-white text-decoration-none">Datetime! Klik hier!</a></span>
+                                <span class="w-100 text-center dashboard-timetable-item-bg-activity activity-1 d-none"><a href="{{ route('date', ['id' => 1]) }}" target="_blank" class="text-white text-decoration-none">Activiteit 2 - Klik hier!</a></span>
                             </div>
                             <div class="dashboard-timetable-item-45 border d-flex align-items-center justify-content-center">
                             </div>
@@ -129,7 +129,7 @@
                             </div>
                             <div class="dashboard-timetable-item-15 text-white border d-flex align-items-center justify-content-center">
                                 <span class="w-100 text-center dashboard-timetable-item-bg-activity-time activity-3-announcement">Bekend om 01:45</span>     
-                                <span class="w-100 text-center dashboard-timetable-item-bg-activity activity-3 d-none"><a href="{{ route('date', ['id' => 2]) }}" target="_blank" class="text-white text-decoration-none">Datetime! Klik hier!</a></span>
+                                <span class="w-100 text-center dashboard-timetable-item-bg-activity activity-3 d-none"><a href="{{ route('date', ['id' => 2]) }}" target="_blank" class="text-white text-decoration-none">Activiteit 4 - Klik hier!</a></span>
                             </div>
                             <div class="dashboard-timetable-item-45 border d-flex align-items-center justify-content-center">
                             </div>
@@ -150,7 +150,7 @@
                             </div>
                             <div class="dashboard-timetable-item-15 text-white border d-flex align-items-center justify-content-center">
                                 <span class="w-100 text-center dashboard-timetable-item-bg-activity-time activity-5-announcement">Bekend om 03:45</span>         
-                                <span class="w-100 text-center dashboard-timetable-item-bg-activity activity-5 d-none"><a href="{{ route('date', ['id' => 3]) }}" target="_blank" class="text-white text-decoration-none">Datetime! Klik hier!</a></span>
+                                <span class="w-100 text-center dashboard-timetable-item-bg-activity activity-5 d-none"><a href="{{ route('date', ['id' => 3]) }}" target="_blank" class="text-white text-decoration-none">Activiteit 6 - Klik hier!</a></span>
                             </div>
                             <div class="dashboard-timetable-item-45 border d-flex align-items-center justify-content-center">
                             </div>
