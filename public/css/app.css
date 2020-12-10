@@ -10952,11 +10952,11 @@ a.text-dark:focus {
 }
 
 .dashboard-timetable-item-bg-activity {
-  background-color: #0700AD;
+  background-color: rgba(7, 0, 173, 0.3);
 }
 
-.dashboard-timetable-item-bg-activity-time {
-  background-color: rgba(7, 0, 173, 0.3);
+.dashboard-timetable-item-bg-activity-active {
+  background-color: #0700AD !important;
 }
 
 @font-face {

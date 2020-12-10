@@ -16,7 +16,7 @@
                     <div class="my-auto dashboard-livestream-iframe-container rounded-lg embed-responsive embed-responsive-16by9">
                         <iframe 
                             class="dashboard-livestream-iframe embed-responsive-item"
-                            src="https://vk.com/video_ext.php?oid=-200957020&id=456239020&hash=4e5cec3edc789897" 
+                            src="https://vk.com/video_ext.php?oid=-200957020&id=456239021&hash=a5132e3079ab6fe3" 
                             frameborder="0" 
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                             allowfullscreen
@@ -79,7 +79,7 @@
                             <div class="dashboard-timetable-item-45 border d-flex align-items-center justify-content-center">
                             </div>
                             <div class="dashboard-timetable-item-15 text-white border d-flex align-items-center justify-content-center">
-                                <span class="w-100 text-center dashboard-timetable-item-bg-activity-time activity-0-announcement">Bekend om 22:45</span>    
+                                <span class="w-100 text-center dashboard-timetable-item-bg-activity activity-0-announcement">Bekend om 22:45</span>    
                                 <span class="w-100 text-center dashboard-timetable-item-bg-activity activity-0 d-none" role="button" data-toggle="popover" tabindex="0" data-trigger="focus" 
                                     title="Two Truths And A Lie" 
                                     data-html="true"
@@ -97,13 +97,13 @@
                             <div class="dashboard-timetable-item-45 border d-flex align-items-center justify-content-center">
                             </div>
                             <div class="dashboard-timetable-item-15 text-white border d-flex align-items-center justify-content-center">
-                                <span class="w-100 text-center dashboard-timetable-item-bg-activity-time activity-1-announcement">Bekend om 23:45</span>     
+                                <span class="w-100 text-center dashboard-timetable-item-bg-activity activity-1-announcement">Bekend om 23:45</span>     
                                 <span class="w-100 text-center dashboard-timetable-item-bg-activity activity-1 d-none"><a href="{{ route('date', ['id' => 1]) }}" target="_blank" class="text-white text-decoration-none">Activiteit 2 - Klik hier!</a></span>
                             </div>
                             <div class="dashboard-timetable-item-45 border d-flex align-items-center justify-content-center">
                             </div>
                             <div class="dashboard-timetable-item-15 text-white border d-flex align-items-center justify-content-center">
-                                <span class="w-100 text-center dashboard-timetable-item-bg-activity-time activity-2-announcement">Bekend om 00:45</span>     
+                                <span class="w-100 text-center dashboard-timetable-item-bg-activity activity-2-announcement">Bekend om 00:45</span>     
                                 <span class="w-100 text-center dashboard-timetable-item-bg-activity activity-2 d-none" role="button" data-toggle="popover" tabindex="0" data-trigger="focus" 
                                     title="Afterlympics" 
                                     data-html="true"
@@ -128,13 +128,13 @@
                             <div class="dashboard-timetable-item-45 border d-flex align-items-center justify-content-center">
                             </div>
                             <div class="dashboard-timetable-item-15 text-white border d-flex align-items-center justify-content-center">
-                                <span class="w-100 text-center dashboard-timetable-item-bg-activity-time activity-3-announcement">Bekend om 01:45</span>     
+                                <span class="w-100 text-center dashboard-timetable-item-bg-activity activity-3-announcement">Bekend om 01:45</span>     
                                 <span class="w-100 text-center dashboard-timetable-item-bg-activity activity-3 d-none"><a href="{{ route('date', ['id' => 2]) }}" target="_blank" class="text-white text-decoration-none">Activiteit 4 - Klik hier!</a></span>
                             </div>
                             <div class="dashboard-timetable-item-45 border d-flex align-items-center justify-content-center">
                             </div>
                             <div class="dashboard-timetable-item-15 text-white border d-flex align-items-center justify-content-center">
-                                <span class="w-100 text-center dashboard-timetable-item-bg-activity-time activity-4-announcement">Bekend om 02:45</span>     
+                                <span class="w-100 text-center dashboard-timetable-item-bg-activity activity-4-announcement">Bekend om 02:45</span>     
                                 <span class="w-100 text-center dashboard-timetable-item-bg-activity activity-4 d-none" role="button" data-toggle="popover" tabindex="0" data-trigger="focus" 
                                     title="Verstoppertje" 
                                     data-html="true"
@@ -149,13 +149,13 @@
                             <div class="dashboard-timetable-item-45 border d-flex align-items-center justify-content-center">
                             </div>
                             <div class="dashboard-timetable-item-15 text-white border d-flex align-items-center justify-content-center">
-                                <span class="w-100 text-center dashboard-timetable-item-bg-activity-time activity-5-announcement">Bekend om 03:45</span>         
+                                <span class="w-100 text-center dashboard-timetable-item-bg-activity activity-5-announcement">Bekend om 03:45</span>         
                                 <span class="w-100 text-center dashboard-timetable-item-bg-activity activity-5 d-none"><a href="{{ route('date', ['id' => 3]) }}" target="_blank" class="text-white text-decoration-none">Activiteit 6 - Klik hier!</a></span>
                             </div>
                             <div class="dashboard-timetable-item-45 border d-flex align-items-center justify-content-center">
                             </div>
                             <div class="dashboard-timetable-item-15 text-white border d-flex align-items-center justify-content-center">
-                                <span class="w-100 text-center dashboard-timetable-item-bg-activity-time activity-6-announcement">Bekend om 04:45</span>             
+                                <span class="w-100 text-center dashboard-timetable-item-bg-activity activity-6-announcement">Bekend om 04:45</span>             
                                 <span class="w-100 text-center dashboard-timetable-item-bg-activity activity-6 d-none" role="button" data-toggle="popover" tabindex="0" data-trigger="focus" 
                                     title="Op avontuur!" 
                                     data-html="true"

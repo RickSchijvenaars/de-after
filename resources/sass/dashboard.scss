@@ -41,9 +41,9 @@
                     background-color: #FF58CF;
                 }
                 &-activity {
-                    background-color: #0700AD;
-                    &-time {
-                        background-color: rgba(#0700AD, 0.3);
+                    background-color: rgba(#0700AD, 0.3);
+                    &-active {
+                        background-color: #0700AD !important;
                     }
                 }
             }
