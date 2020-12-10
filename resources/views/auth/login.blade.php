@@ -12,10 +12,10 @@
             <div class="card-body py-5">
                 @if ($open)
                 <form method="POST" action="{{ route('login') }}">
-                    @csrf
                 @else
                 <form>
                 @endif
+                    @csrf
 
                     <div class="form-group row">
                         <label for="key" class="text-white col-md-4 col-form-label text-md-right">SLEUTEL</label>
