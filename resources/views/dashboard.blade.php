@@ -16,7 +16,7 @@
                     <div class="my-auto dashboard-livestream-iframe-container rounded-lg embed-responsive embed-responsive-16by9">
                         <iframe 
                             class="dashboard-livestream-iframe embed-responsive-item"
-                            src="https://vk.com/video_ext.php?oid=-200957020&id=456239021&hash=a5132e3079ab6fe3" 
+                            src="https://vk.com/video_ext.php?oid=-200957020&id=456239022&hash=f0f01ab78671712c" 
                             frameborder="0" 
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                             allowfullscreen
