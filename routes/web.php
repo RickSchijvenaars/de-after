@@ -6,7 +6,7 @@ use App\Time;
 Auth::routes(['register' => false]);
 
 Route::view('/', 'homepage')->name('homepage');
-Route::redirect('/', '/login');
+// Route::redirect('/', '/login');
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
 Route::get('/date/{id}', 'DateController@index')->name('date');
 
